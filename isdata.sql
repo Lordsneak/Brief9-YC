@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2020 at 03:39 PM
+-- Generation Time: Apr 24, 2020 at 03:54 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -28,7 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `fournisseur` (
-  `ID` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -63,7 +64,7 @@ CREATE TABLE `rayon` (
 -- Indexes for table `fournisseur`
 --
 ALTER TABLE `fournisseur`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `produit`
@@ -85,7 +86,7 @@ ALTER TABLE `rayon`
 -- AUTO_INCREMENT for table `fournisseur`
 --
 ALTER TABLE `fournisseur`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `produit`
